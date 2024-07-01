@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 166, 255);
+        }
+        .container{
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            margin-bottom: 20%;
+            margin-left: 35%;
+
+        }
+        
+    .row{
+        display: flex;
+       
+    } 
+    .column{
+        height:100px;
+        width:100px;
+        border:1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        cursor: pointer;
+        background-color: white;
+        scale: -0.9;
+        transition-behavior: 0.4s all;
+        border-radius: 1rem;
+        
+    }
+    .btn{
+        color:chocolate;
+        font-size: 20px;
+        scale:1;
+        border-radius: 0.7rem;
+        align-items: center;
+        margin: 0%;
+        padding: 10px 20px;
+        background-color: purple;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <div onclick="handleClick(this)" id="0" class="column"></div>
+                <div onclick="handleClick(this)" id="1" class="column"></div>
+                <div onclick="handleClick(this)" id="2" class="column"></div></div>
+            <div class="row">
+               <div onclick="handleClick(this)" id="3" class="column"></div>
+                <div onclick="handleClick(this)" id="4" class="column"></div>
+                <div onclick="handleClick(this)" id="5" class="column"></div></div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="6" class="column"></div>
+                <div onclick="handleClick(this)" id="7" class="column"></div>
+                <div onclick="handleClick(this)" id="8" class="column"></div></div> 
+        </div>
+        <button class="btn" id="Restart">Restart Your Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
